@@ -571,3 +571,24 @@ footer {
   color: var(--muted-gray);
   font-size: 0.9rem;
 }
+
+.legal-content ol {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  counter-reset: item;
+}
+
+.legal-content ol li {
+  color: var(--light-gray);
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.legal-content ol li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  color: var(--primary-blue);
+  position: absolute;
+  left: 0;
+}
