@@ -48,15 +48,31 @@ nav {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-blue);
-  text-shadow: var(--text-shadow);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
 }
 
 .logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo a span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
   color: var(--primary-blue);
   text-decoration: none;
+  text-shadow: var(--text-shadow);
+  letter-spacing: 0.5px;
   transition: opacity 0.3s ease;
 }
 
@@ -438,20 +454,18 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.footer-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-blue);
+.footer-links {
+  display: flex;
+  gap: 2rem;
 }
 
 .footer-links a {
   color: var(--light-gray);
   text-decoration: none;
-  margin-left: 2rem;
   transition: color 0.3s ease;
 }
 
