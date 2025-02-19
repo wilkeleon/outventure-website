@@ -54,6 +54,16 @@ nav {
   text-shadow: var(--text-shadow);
 }
 
+.logo a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+  opacity: 0.8;
+}
+
 .nav-links a {
   margin-left: 2rem;
   text-decoration: none;
