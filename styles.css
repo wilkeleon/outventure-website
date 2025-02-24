@@ -616,3 +616,75 @@ footer {
   position: absolute;
   left: 0;
 }
+
+/* Support Page */
+.support-page {
+  max-width: 900px;
+}
+
+.support-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.contact-method {
+  background: var(--secondary-dark);
+  padding: 2rem;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--blue-border);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+}
+
+.contact-method ion-icon {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.contact-method h3 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.contact-method a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.contact-method a:hover {
+  opacity: 0.8;
+}
+
+.support-note {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.support-note p {
+  margin: 0.5rem 0;
+}
+
+.response-time {
+  color: var(--muted-gray);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+}
